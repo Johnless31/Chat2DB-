@@ -1,0 +1,48 @@
+@import '../../../../../styles/var.less';
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  :global {
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: var(--color-text) !important;
+      font-weight: 400;
+    }
+  }
+}
+
+.consoleBox {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.tabBox {
+  padding: 10px 10px 0px;
+}
+
+.activeConsoleBox {
+  display: block;
+}
+
+.ears {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  font-weight: 900;
+  color: var(--color-text);
+  opacity: 0.15;
+  overflow: hidden;
+}
