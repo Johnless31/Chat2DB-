@@ -1,16 +1,22 @@
-import React, { memo, useRef,useState, useEffect } from 'react';
+import React, { memo, useRef, useState, useEffect } from 'react';
+import { connect } from 'umi';
 import styles from './index.less';
 import classnames from 'classnames';
 import DraggableContainer from '@/components/DraggableContainer';
-import Console from '@/components/Console';
-import LoadingContent from '@/components/Loading/LoadingContent';
+import Console, { IAppendValue } from '@/components/Console';
 import SearchResult from '@/components/SearchResult';
-import {DatabaseTypeCode} from '@/constants/common';
-import { IManageResultData } from '@/typings/database';
-import { useReducerContext } from '@/pages/main/workspace';
+import { DatabaseTypeCode, ConsoleStatus } from '@/constants';
+import { IManageResultData } from '@/typings';
+import { IWorkspaceModelState } from '@/models/workspace';
+import historyServer from '@/service/history';
+import { IAIState } from '@/models/ai';
 
 interface IProps {
   className?: string;
+  isActive: boolean;
+  workspaceModel: IWorkspaceModelState;
+  aiModel: IAIState;
+  dispatch: any;
   data: {
     databaseName: string;
     dataSourceId: number;
@@ -22,51 +28,71 @@ interface IProps {
   };
 }
 
-export default memo<IProps>(function WorkspaceRightItem(props) {
-  const { className, data } = props;
+const WorkspaceRightItem = memo<IProps>(function (props) {
+  const { className, data, workspaceModel, aiModel, isActive, dispatch } = props;
   const draggableRef = useRef<any>();
-  const [consoleValue, setConsoleValue] = useState<string>(data.initDDL || '');
+  const [appendValue, setAppendValue] = useState<IAppendValue>();
   const [resultData, setResultData] = useState<IManageResultData[]>([]);
-  const { state, dispatch } = useReducerContext();
-  const { dblclickTreeNodeData, currentWorkspaceData } = state;
-
+  const { doubleClickTreeNodeData, curTableList, curWorkspaceParams } = workspaceModel;
+  const [showResult, setShowResult] = useState(false);
 
   useEffect(() => {
-    if(!dblclickTreeNodeData){
-      return
+    if (!doubleClickTreeNodeData) {
+      return;
     }
-    const { extraParams } = dblclickTreeNodeData;
-    const { databaseName, schemaName, dataSourceId, dataSourceName, databaseType, tableName } = extraParams || {};
-    const ddl = `SELECT * FROM ${tableName};`;
-
-    if (data.databaseName === databaseName && data.dataSourceId === dataSourceId) {
-      setConsoleValue(`${consoleValue}\n${ddl}`)
+    const { extraParams } = doubleClickTreeNodeData;
+    const { tableName } = extraParams || {};
+    const ddl = `SELECT * FROM ${tableName};\n`;
+    if (isActive) {
+      setAppendValue({ text: ddl });
     }
-  }, [dblclickTreeNodeData]);
+    dispatch({
+      type: 'workspace/setDoubleClickTreeNodeData',
+      payload: '',
+    });
+  }, [doubleClickTreeNodeData]);
 
-  return <div className={classnames(styles.box)}>
-    <DraggableContainer layout="column" className={styles.boxRightCenter}>
-      <div ref={draggableRef} className={styles.boxRightConsole}>
-        <Console
-          executeParams={{...data}}
-          hasAiChat={true}
-          hasAi2Lang={true}
-          value={consoleValue}
-          onChangeValue={
-            (value:string)=>{
-              setConsoleValue(value)
-            }
-          }
-          onExecuteSQL={(result) => {
-            setResultData(result);
-          }}
-        />
-      </div>
-      <div className={styles.boxRightResult}>
-        <LoadingContent data={resultData} handleEmpty>
-          <SearchResult manageResultDataList={resultData} />
-        </LoadingContent>
-      </div>
-    </DraggableContainer>
-  </div>
-})
+  return (
+    <div className={classnames(styles.box)}>
+      <DraggableContainer layout="column" className={styles.boxRightCenter}>
+        <div ref={draggableRef} className={styles.boxRightConsole}>
+          <Console
+            source='workspace'
+            defaultValue={data.initDDL}
+            isActive={isActive}
+            appendValue={appendValue}
+            executeParams={{ ...data }}
+            hasAiChat={true}
+            hasAi2Lang={true}
+            onExecuteSQL={(res: any, a: any, params: any) => {
+              setResultData(res);
+              setShowResult(true);
+              historyServer.createHistory(params);
+            }}
+            onConsoleSave={() => {
+              dispatch({
+                type: 'workspace/fetchGetSavedConsole',
+                payload: {
+                  status: ConsoleStatus.RELEASE,
+                  orderByDesc: true,
+                  ...curWorkspaceParams,
+                },
+                callback: (res: any) => {
+                  dispatch({
+                    type: 'workspace/setConsoleList',
+                    payload: res.data,
+                  });
+                },
+              });
+            }}
+            tables={curTableList || []}
+            remainingUse={aiModel.remainingUse}
+          />
+        </div>
+        <div className={styles.boxRightResult}>{<SearchResult manageResultDataList={resultData} />}</div>
+      </DraggableContainer>
+    </div>
+  );
+});
+
+export default WorkspaceRightItem;

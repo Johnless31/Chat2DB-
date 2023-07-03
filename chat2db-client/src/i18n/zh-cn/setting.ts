@@ -16,7 +16,7 @@ export default {
   'setting.title.aiSource': 'AI 来源',
   'setting.tab.custom': '自定义',
   'setting.label.serviceAddress': '服务地址',
-  'setting.button.use': '应用',
+  'setting.button.apply': '应用',
   'setting.text.currentEnv': '当前环境',
   'setting.text.currentVersion': '当前版本',
   'setting.text.viewingUpdateLogs': '查看当前应用',
@@ -24,8 +24,12 @@ export default {
   'setting.label.customAiUrl': '自定义接口Url',
   'setting.placeholder.httpsProxy': '非必填，用于设置请求OPENAI接口时的HTTP代理{1}',
   'setting.placeholder.apiKey': '使用OpenAi接口时必填，可前往OpenAI官网查看APIKEY',
+  'setting.placeholder.chat2dbApiKey': '使用Chat2DB提供的APIKEY',
   'setting.placeholder.customUrl': '选择自定义AI时必填，用于设置自定义AI的REST接口URL',
   'setting.placeholder.apiHost': '非必填，默认值为 https://api.openai.com/',
   'setting.message.urlTestError': '接口测试不通过',
+  'setting.placeholder.azureOpenAIKey': '从Azure门户获取Azure OpenAI密钥凭证',
+  'setting.placeholder.azureEndpoint': '从Azure门户获取Azure OpenA端口',
+  'setting.placeholder.azureDeployment': '部署模型的部署id',
 
 }

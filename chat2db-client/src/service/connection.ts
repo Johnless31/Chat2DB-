@@ -1,5 +1,4 @@
-import { IPageResponse } from '@/typings/common';
-import { IConnectionDetails } from '@/typings/connection';
+import { IPageResponse, IConnectionDetails } from '@/typings';
 import createRequest from './base';
 // import { IPageResponse, IConnectionDetails, IDB } from '@/types';
 
@@ -10,7 +9,7 @@ export interface IGetConnectionParams {
 }
 
 /**
- * 查询连接池列表
+ * 查询连接列表
  */
 const getList = createRequest<
   IGetConnectionParams,

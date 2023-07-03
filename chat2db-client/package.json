@@ -2,30 +2,31 @@
   "name": "chat2db",
   "version": "1.0.0",
   "private": true,
-  "author": "fjy, hexi",
-  "main": "src/main/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/chat2db/Chat2DB"
   },
+  "author": "fjy, hexi",
+  "main": "src/main/index.js",
   "scripts": {
     "build": "npm run build:web && npm run build:main",
-    "build:prod": "npm run build:web:prod && npm run build:main:prod",
     "build:desktop": "npm run build:web:desktop && npm run build:main:prod",
     "build:main": "cross-env NODE_ENV=development electron-builder",
     "build:main:prod": "cross-env NODE_ENV=production electron-builder",
+    "build:prod": "npm run build:web:prod && npm run build:main:prod",
     "build:web": "umi build",
-    "build:web:desktop": "cross-env UMI_ENV=desktop APP_VERSION=${npm_config_appVersion} cross-env APP_PORT=${npm_config_appPort} umi build",
+    "build:web:desktop": "cross-env UMI_ENV=desktop cross-env APP_VERSION=${npm_config_appVersion} cross-env APP_PORT=${npm_config_appPort} umi build",
     "build:web:prod": "cross-env UMI_ENV=prod cross-env APP_VERSION=${npm_config_appVersion} cross-env APP_PORT=${npm_config_appPort} umi build",
     "postinstall": "umi setup",
     "lint": "umi lint",
     "start": "concurrently \"npm run start:web\" \"npm run start:main\"",
     "start:main": "cross-env NODE_ENV=development electron .",
     "start:main:prod": "cross-env NODE_ENV=production electron .",
-    "start:web": "umi dev"
+    "start:web": "cross-env UMI_ENV=local umi dev"
   },
   "dependencies": {
     "ahooks": "^3.7.7",
+    "ali-react-table": "^2.6.1",
     "antd": "^5.6.0",
     "echarts": "^5.4.2",
     "echarts-for-react": "^3.0.2",
@@ -38,6 +39,7 @@
     "react-monaco-editor": "^0.52.0",
     "react-sortablejs": "^6.1.4",
     "sql-formatter": "^12.2.1",
+    "styled-components": "^6.0.1",
     "umi": "^4.0.70",
     "umi-request": "^1.4.0",
     "uuid": "^9.0.0"
@@ -51,7 +53,7 @@
     "@umijs/plugins": "^4.0.55",
     "concurrently": "^8.1.0",
     "cross-env": "^7.0.3",
-    "electron": "^25.0.1",
+    "electron": "20.1.4",
     "electron-builder": "^23.6.0",
     "electron-debug": "^3.2.0",
     "electron-reload": "^2.0.0-alpha.1",

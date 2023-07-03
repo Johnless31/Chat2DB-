@@ -1,4 +1,4 @@
-import { DatabaseTypeCode } from '@/constants/database';
+import { DatabaseTypeCode } from '@/constants';
 import { IConnectionConfig } from './types';
 import { InputType, AuthenticationType, SSHAuthenticationType, OperationColumn } from './enum';
 
@@ -170,7 +170,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -227,7 +227,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -262,7 +262,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'User',
                   name: 'user',
                   required: true,
-        
+
                 },
                 {
                   defaultValue: '',
@@ -271,7 +271,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'Password',
                   name: 'password',
                   required: true,
-        
+
                 },
               ],
               label: 'User&Password',
@@ -285,7 +285,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '50%',
-            
+
           }
         },
         {
@@ -363,7 +363,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -413,7 +413,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -440,7 +440,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -466,7 +466,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '30%',
-            
+
           }
         },
         {
@@ -486,7 +486,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'User',
                   name: 'user',
                   required: true,
-        
+
                 },
                 {
                   defaultValue: '',
@@ -495,7 +495,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'Password',
                   name: 'password',
                   required: true,
-        
+
                 },
               ],
               label: 'User&Password',
@@ -509,7 +509,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '50%',
-            
+
           }
         },
         {
@@ -553,7 +553,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -579,7 +579,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -629,7 +629,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -664,7 +664,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'User',
                   name: 'user',
                   required: true,
-        
+
                 },
                 {
                   defaultValue: '',
@@ -673,7 +673,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'Password',
                   name: 'password',
                   required: true,
-        
+
                 },
               ],
 
@@ -688,7 +688,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '50%',
-            
+
           }
         },
         {
@@ -741,7 +741,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -767,7 +767,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -835,7 +835,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -879,7 +879,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'User',
                   name: 'user',
                   required: true,
-        
+
                 },
                 {
                   defaultValue: '',
@@ -888,7 +888,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'Password',
                   name: 'password',
                   required: true,
-        
+
                 },
               ],
 
@@ -903,7 +903,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '50%',
-            
+
           }
         },
         {
@@ -956,7 +956,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -982,7 +982,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1073,7 +1073,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1099,7 +1099,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1149,7 +1149,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1184,7 +1184,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'User',
                   name: 'user',
                   required: true,
-        
+
                 },
                 {
                   defaultValue: '',
@@ -1193,7 +1193,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'Password',
                   name: 'password',
                   required: true,
-        
+
                 },
               ],
 
@@ -1208,7 +1208,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '50%',
-            
+
           }
         },
         {
@@ -1261,7 +1261,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1287,7 +1287,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1337,7 +1337,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1372,7 +1372,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'User',
                   name: 'user',
                   required: true,
-        
+
                 },
                 {
                   defaultValue: '',
@@ -1381,7 +1381,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'Password',
                   name: 'password',
                   required: true,
-        
+
                 },
               ],
 
@@ -1396,7 +1396,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '50%',
-            
+
           }
         },
         {
@@ -1450,7 +1450,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1462,7 +1462,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1488,7 +1488,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1537,7 +1537,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: true,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1572,7 +1572,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'User',
                   name: 'user',
                   required: true,
-        
+
                 },
                 {
                   defaultValue: '',
@@ -1581,7 +1581,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
                   labelNameEN: 'Password',
                   name: 'password',
                   required: true,
-        
+
                 },
               ],
               label: 'User&Password',
@@ -1594,7 +1594,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           ],
           styles: {
             width: '50%',
-            
+
           }
         },
         {
@@ -1647,7 +1647,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1673,7 +1673,7 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
           required: false,
           styles: {
             width: '70%',
-            
+
           }
         },
         {
@@ -1706,5 +1706,1965 @@ export const dataSourceFormConfigs: IConnectionConfig[] = [
       },
     ],
     type: DatabaseTypeCode.DM
+  },
+  //DB2
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '50000',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:db2://localhost:50000',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:db2:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:db2://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.DB2
+  },
+  //presto
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '8080',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:presto://localhost:8080',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:presto:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:presto://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.PRESTO
+  },
+  //oceanbase
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '2883',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:oceanbase://localhost:2883',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:oceanbase:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:oceanbase://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.OCEANBASE
+  },
+  //redis
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '6379',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:redis://localhost:6379',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:redis:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:redis://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.REDIS
+  },
+  //redis
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '6379',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:redis://localhost:6379',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:redis:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:redis://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.REDIS
+  },
+  //hive
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '10000',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:hive2://localhost:10000',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:hive2:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:hive2://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.HIVE
+  },
+  //hive
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '10000',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:hive2://localhost:10000',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:hive2:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:hive2://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.HIVE
+  },
+  //hive
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '10000',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:hive2://localhost:10000',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:hive2:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:hive2://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.HIVE
+  },
+  //KINGBASE
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '54321',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'jdbc:kingbase8://127.0.0.1:54321',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /jdbc:kingbase8:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'jdbc:kingbase8://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.KINGBASE
+  },
+  //MONGODB
+  {
+    baseInfo: {
+      items: [
+        {
+          defaultValue: '@localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '名称',
+          labelNameEN: 'Name',
+          name: 'alias',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'localhost',
+          inputType: InputType.INPUT,
+          labelNameCN: '主机',
+          labelNameEN: 'Host',
+          name: 'host',
+          required: true,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '27017',
+          inputType: InputType.INPUT,
+          labelNameCN: '端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          labelTextAlign: 'right',
+          required: true,
+          styles: {
+            width: '30%',
+            labelWidthEN: '40px',
+            labelWidthCN: '40px',
+            labelAlign: 'right'
+          }
+        },
+        {
+          defaultValue: AuthenticationType.USERANDPASSWORD,
+          inputType: InputType.SELECT,
+          labelNameCN: '身份验证',
+          labelNameEN: 'Authentication',
+          name: 'authentication',
+          required: true,
+          selects: [
+            {
+              items: [
+                {
+                  defaultValue: 'root',
+                  inputType: InputType.INPUT,
+                  labelNameCN: '用户名',
+                  labelNameEN: 'User',
+                  name: 'user',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+                {
+                  defaultValue: '',
+                  inputType: InputType.PASSWORD,
+                  labelNameCN: '密码',
+                  labelNameEN: 'Password',
+                  name: 'password',
+                  required: true,
+                  styles: {
+                    width: '100%',
+                  }
+                },
+              ],
+              label: 'User&Password',
+              value: AuthenticationType.USERANDPASSWORD,
+            },
+            {
+              label: 'NONE',
+              value: AuthenticationType.NONE,
+            },
+          ],
+          styles: {
+            width: '50%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '数据库',
+          labelNameEN: 'Database',
+          name: 'database',
+          required: false,
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: 'mongodb://localhost:27017',
+          inputType: InputType.INPUT,
+          labelNameCN: 'URL',
+          labelNameEN: 'URL',
+          name: 'url',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+
+      ],
+      pattern: /mongodb:\/\/(.*):(\d+)(\/(\w+))?/,
+      template: 'mongodb://{host}:{port}/{database}',
+    },
+    ssh: {
+      items: [
+        {
+          defaultValue: 'false',
+          inputType: InputType.SELECT,
+          labelNameCN: '使用SSH',
+          labelNameEN: 'USE SSH',
+          name: 'use',
+          required: false,
+          selects: [
+            {
+              value: 'false',
+            },
+            {
+              value: 'true',
+            },
+          ],
+          styles: {
+            width: '100%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 主机',
+          labelNameEN: 'SSH Hostname',
+          name: 'hostName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: 'SSH 端口',
+          labelNameEN: 'Port',
+          name: 'port',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '用户名',
+          labelNameEN: 'SSH UserName',
+          name: 'userName',
+          required: false,
+          styles: {
+            width: '70%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.INPUT,
+          labelNameCN: '本地端口',
+          labelNameEN: 'LocalPort',
+          name: 'localPort',
+          required: false,
+          styles: {
+            width: '28%',
+          }
+        },
+        {
+          defaultValue: '',
+          inputType: InputType.PASSWORD,
+          labelNameCN: '密码',
+          labelNameEN: 'Password',
+          name: 'password',
+          required: true,
+          styles: {
+            width: '100%',
+          }
+        },
+      ]
+    },
+    extendInfo: [
+
+    ],
+    type: DatabaseTypeCode.MONGODB
   },
 ];

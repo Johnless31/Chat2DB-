@@ -2,8 +2,10 @@ const { app, BrowserWindow, Menu, shell, net, ipcMain, dialog } = require('elect
 const path = require('path');
 const os = require('os');
 const fs = require('fs');
-const menuBar = require('./menu');
+const registerAppMenu = require('./menu');
+const i18n = require('./i18n');
 const { loadMainResource } = require('./utils');
+
 let mainWindow = null;
 
 function createWindow() {
@@ -35,10 +37,6 @@ function createWindow() {
     event.preventDefault();
     shell.openExternal(url);
   });
-
-  mainWindow.on('closed', () => {
-    mainWindow = null;
-  });
 }
 
 // const menu = Menu.buildFromTemplate(menuBar);
@@ -46,13 +44,15 @@ function createWindow() {
 
 app.on('ready', () => {
   createWindow();
+  registerAppMenu();
 
   app.on('activate', function () {
-    if (BrowserWindow.getAllWindows().length === 0) {
+    if (mainWindow === null) {
       createWindow();
     }
   });
 });
+
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
@@ -82,7 +82,3 @@ ipcMain.handle('get-product-name', (event) => {
   const { name } = path.parse(exePath);
   return name;
 });
-
-module.exports = {
-  mainWindow,
-};
